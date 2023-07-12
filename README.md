@@ -12,7 +12,7 @@ Implementar la consulta de un cliente con la siguiente casuística:
 9. Se debe definir el contrato open api del servicio (opcional)
 10. Usar JPA para la consulta de base de datos
 11. Usar Lombok para la definición de todos los objetos de intercambio de datos (DTO)
-12. Definir la documentación del servicio con la anotación @ApiModelProperty
+12. Definir la documentación del servicio con la anotación @Scheme
 
 
 ## Compilación
@@ -31,7 +31,7 @@ gradle bootRun
 
 ## Recomendaciones
 
-- Esta aplicación ya contiene la BD embebida, es una H2, los registros ingresados se encuentran en el archivo schema.sql, no se reomienda editar este archivo.
+- Esta aplicación ya contiene la BD embebida, es una H2, los registros ingresados se encuentran en el archivo schema.sql, no se recomienda editar este archivo.
 - para ingresar a swagger ui deberá iniciar la aplicación y luego dirigirse a http://localhost:9091/inetum/evaluaciones/swagger-ui.html
 
 
