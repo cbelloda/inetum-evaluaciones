@@ -7,7 +7,7 @@ import reactor.core.publisher.Flux;
 public class ServiceImpl {
 
   public Flux<String> getAccount(String userIdentity) {
-    return Flux.range(1, 220).map(number -> "el numero "+userIdentity+"  "+number);
+    return Flux.range(1, 220).map(number -> "el numero "+userIdentity+" -->  "+number);
   }
   
 }
