@@ -1,26 +1,9 @@
 name : first Workflow
-on: [push]
+on: [pull_request]
 
 jobs:
   run-shell-commands:
     runs-on: ubuntu-latest
     steps:
-      - name: echo a string
-        run: echo "Hello World"
-      - name: Multiline Command 
-        run: |
-          node -v
-          npm -v 
-  parallel-job:
-    runs-on: macos-latest
-    steps:
-      - name: view SW Version
-        run: sw_vers
-  dependant-job:
-    runs-on: windows-latest
-    needs: [run-shell-commands]
-    steps:
-      - name: echo a string
-        run: Write-Output "Windows String"
-      - name: Error Step
-        run: doesnotexist 
+      - name: gitStream repo agent
+        uses: linear-b/gitstream-github-action@2.0.20
