@@ -1,9 +1,0 @@
-name : first Workflow
-on: [pull_request]
-
-jobs:
-  run-shell-commands:
-    runs-on: ubuntu-latest
-    steps:
-      - name: gitStream repo agent
-        uses: linear-b/gitstream-github-action@2.0.20
