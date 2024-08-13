@@ -12,7 +12,9 @@ import org.springframework.web.reactive.config.EnableWebFlux;
 public class EvaluacionesApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(EvaluacionesApplication.class, args);
+	
 	}
 
 }
